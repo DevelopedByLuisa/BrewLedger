@@ -1,0 +1,6 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <ProjectReference Include="..\BrewLedger.Domain\BrewLedger.Domain.csproj" />
+    <ProjectReference Include="..\BrewLedger.Infrastructure\BrewLedger.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

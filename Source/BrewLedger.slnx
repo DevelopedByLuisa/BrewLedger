@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Settings/">
+    <File Path="../.editorconfig" />
+    <File Path="../nuget.config" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Project Path="BrewLedger.Domain/BrewLedger.Domain.csproj" />
+  <Project Path="BrewLedger.Infrastructure/BrewLedger.Infrastructure.csproj" />
+  <Project Path="BrewLedger/BrewLedger.csproj" />
+  <Project Path="Tests/Tests.csproj" Id="00bb728e-73b0-4206-b7f6-d9c5b8139819" />
+</Solution>

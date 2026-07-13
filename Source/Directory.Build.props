@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)\..\Bin</OutDir>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+
+    <Company>DevelopedByLuisa</Company>
+    <Product>BrewLedger</Product>
+    <Copyright>Copyright (c) 2026 DevelopedByLuisa</Copyright>
+    <Authors>DevelopedByLuisa</Authors>
+
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+  </PropertyGroup>
+</Project>

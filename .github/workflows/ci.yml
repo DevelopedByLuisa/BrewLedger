@@ -1,0 +1,32 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+    branches-ignore:
+      - main
+
+env:
+  SOLUTION_PATH: "Source/BrewLedger.slnx"
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v7
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v5
+
+      - name: Restore NuGet Packages
+        run: dotnet restore ${{ env.SOLUTION_PATH }}
+
+      - name: Build Solution
+        run: dotnet build ${{ env.SOLUTION_PATH }} --no-restore
+
+      - name: Test Solution
+        run: dotnet test ${{ env.SOLUTION_PATH }} --no-restore

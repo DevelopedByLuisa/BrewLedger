@@ -1,0 +1,5 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\BrewLedger.Domain\BrewLedger.Domain.csproj" />
+  </ItemGroup>
+</Project>
