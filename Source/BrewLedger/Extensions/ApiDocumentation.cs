@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
@@ -6,6 +7,7 @@ using Microsoft.OpenApi;
 
 namespace BrewLedger.Extensions;
 
+[ExcludeFromCodeCoverage(Justification = "No custom logic has been implemented; it's purely a DI registration.")]
 public static class ApiDocumentation
 {
   public static IServiceCollection AddApiDocumentation(this IServiceCollection services)
