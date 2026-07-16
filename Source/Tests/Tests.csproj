@@ -12,6 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Using Include="Xunit" />
+    <ProjectReference Include="..\BrewLedger.Domain\BrewLedger.Domain.csproj" />
+    <ProjectReference Include="..\BrewLedger.Infrastructure\BrewLedger.Infrastructure.csproj" />
+    <ProjectReference Include="..\BrewLedger\BrewLedger.csproj" />
   </ItemGroup>
 </Project>
